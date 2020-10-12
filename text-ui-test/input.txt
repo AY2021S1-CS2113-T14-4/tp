@@ -1,1 +1,19 @@
-James Gosling
+Jack
+info g/M a/21 h/165 o/65 t/55 l/2
+add n/Black Pepper Chicken x/1
+data
+add n/Bao x/2 k/290
+add n/Pancake x/1 k/250 c/16
+add n/Chicken rice x/1 k/666 c/55 p/30
+add n/Kaya toast x/1 k/318 c/38 p/5 f/16
+add n/Kaya toast x/1 k/318 c/38 p/5 f/16
+list
+delete 6
+userinfo
+calculate carbohydrate
+calculate calorie
+calculate protein
+calculate fat
+calculate all
+clear
+exit

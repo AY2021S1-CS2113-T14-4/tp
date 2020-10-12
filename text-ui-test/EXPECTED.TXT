@@ -1,9 +1,137 @@
-Hello from
- ____        _        
-|  _ \ _   _| | _____ 
-| | | | | | | |/ / _ \
-| |_| | |_| |   <  __/
-|____/ \__,_|_|\_\___|
+________________________________________________________________________________________________________________________________________________
+ _______  __ ______ ________ _______   ______   ______  __    __
+|   __  \|  |   ___|__    __|   __  \ /  __  \ /  __  \|  | /  /
+|  |  |  |  |  |___   |  |  |  |__|  |  |  |  |  |  |  |  |/  /
+|  |  |  |  |   ___|  |  |  |   __  <|  |  |  |  |  |  |     /
+|  |__|  |  |  |___   |  |  |  |__|  |  |__|  |  |  |  |  |\  \
+|_______/|__|______|  |__|  |_______/ \______/ \______/|__| \__\
 
-What is your name?
-Hello James Gosling
+Hello! Welcome to DietBook!
+I am Diet, your guide to using DietBook. What is your name?
+Please input in the following format:
+  name YOUR_NAME
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Hi Jack!
+Before we get started, I would like to know about about you so that I can make more
+accurate calculations for you :). Therefore, could you please share with me the following:
+- Your gender either F for female or M for male.
+- Your age which is a positive integer.
+- Your height in cm.
+- Your original weight in kg.
+- Your target weight in kg, or your original weight if that is also your target weight.
+- Your activity level, represented by a number from 1 to 5.
+  1 = You hardly engage in any exercise or have a job that requires little to no physical activity.
+  2 = You engage in some form of light exercise or have a job that requires some physical activity.
+  3 = You engage in moderate amount of exercise or have a job that requires moderate physical activity.
+  4 = You engage in vigorous exercise or have a physically demanding job.
+  5 = You engage in extremely vigorous exercise or have an extremely physically demanding job.
+
+Please input your details in the following format:
+  info g/GENDER a/AGE h/HEIGHT o/ORIGINAL_WEIGHT t/TARGET_WEIGHT l/ACTIVITY_LEVEL
+  Example: info g/F a/21 h/165 o/65 t/55 l/2
+________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________
+Thank you! DietBook has been initialised and you may start by entering any of the commands listed below.
+
+To add a food from the database: add n/FOOD_NAME x/PORTION_SIZE
+To view all food in the database: data
+To add you own food: add n/FOOD_NAME x/PORTION_SIZE k/CALORIE [c/CARBOHYDRATE] [p/PROTEIN] [f/FAT]
+To view all food in DietBook: list
+To delete a food from DietBook: delete INDEX
+To delete all food items from the DietBook: clear
+To show user information: userinfo
+To calculate carbohydrate intake: calculate carbohydrate
+To calculate calorie intake: calculate calorie
+To calculate protein intake: calculate protein
+To calculate fat intake: calculate fat
+To calculate all nutritional intake: calculate all
+To exit DietBook: exit
+_________________________________________________________________________________________________________
+_________________________________________________________________________________________________________
+Got it! I've added this food item:
+  Black Pepper Chicken | calorie : 490 | protein : 0 | carbohydrate : 0 | fat : 0 -- (1)
+_________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Here are the food items in the database:
+  1.Prawn Mee Soup(Dry)(Large) | calorie : 490 | protein : 0 | carbohydrate : 0 | fats : 0
+  2.Prawn Mee Soup(Dry)(Small) | calorie : 390 | protein : 0 | carbohydrate : 0 | fats : 0
+  3.Fried Hokkien Prawn Mee(Large) | calorie : 470 | protein : 0 | carbohydrate : 0 | fats : 0
+  4.Fried Hokkien Prawn Mee(Small) | calorie : 350 | protein : 0 | carbohydrate : 0 | fats : 0
+  5.Clay Pot Chicken | calorie : 440 | protein : 0 | carbohydrate : 0 | fats : 0
+  6.Black Pepper Chicken | calorie : 490 | protein : 0 | carbohydrate : 0 | fats : 0
+  7.Ayam Penyet Set | calorie : 699 | protein : 0 | carbohydrate : 0 | fats : 0
+  8.Steamed Chicken Set | calorie : 475 | protein : 0 | carbohydrate : 0 | fats : 0
+  9.Ikan Grouper Penyet Set | calorie : 699 | protein : 0 | carbohydrate : 0 | fats : 0
+  10.Bouillabaisse with cock cr lobster | calorie : 520 | protein : 35 | carbohydrate : 45 | fats : 56
+  11.Chicken wings with Reblochon pomme purΘe | calorie : 450 | protein : 32 | carbohydrate : 25 | fats : 66
+  12.Sea bass with prawn tortellini, fennel purΘe and white wine sauce | calorie : 530 | protein : 25 | carbohydrate : 76 | fats : 43
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Got it! I've added this food item:
+  Bao | calorie : 580 | protein : 0 | carbohydrate : 0 | fats : 0 -- (2)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Got it! I've added this food item:
+  Pancake | calorie : 250 | protein : 0 | carbohydrate : 16 | fats : 0 -- (1)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Got it! I've added this food item:
+  Chicken rice | calorie : 666 | protein : 30 | carbohydrate : 55 | fats : 0 -- (1)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Got it! I've added this food item:
+  Kaya toast | calorie : 318 | protein : 5 | carbohydrate : 38 | fats : 16 -- (1)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Got it! I've added this food item:
+  Kaya toast | calorie : 318 | protein : 5 | carbohydrate : 38 | fats : 16 -- (1)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Here are the food items in DietBook:
+  1. Black Pepper Chicken | calorie : 490 | protein : 0 | carbohydrate : 0 | fat : 0 -- (1)
+  2. Bao | calorie : 580 | protein : 0 | carbohydrate : 0 | fats : 0 -- (2)
+  3. Pancake | calorie : 250 | protein : 0 | carbohydrate : 16 | fats : 0 -- (1)
+  4. Chicken rice | calorie : 666 | protein : 30 | carbohydrate : 55 | fats : 0 -- (1)
+  5. Kaya toast | calorie : 318 | protein : 5 | carbohydrate : 38 | fats : 16 -- (1)
+  6. Kaya toast | calorie : 318 | protein : 5 | carbohydrate : 38 | fats : 16 -- (1)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Noted. I've removed this food item:
+  Kaya toast | calorie : 318 | protein : 5 | carbohydrate : 38 | fats : 16 -- (1)
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Here is your information:
+  Name: Jack
+  Gender: male
+  Age: 21
+  Height: 165cm
+  Original weight: 65kg
+  Target weight: 55kg
+  Activity level: You engage in some form of light exercise or have a job that requires some physical activity.
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Total carbohydrate intake: 109g
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Total calorie intake: 2304kcal
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Total protein intake: 35g
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Total fat intake: 16g
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Total calorie intake: 2304kcal
+Total carbohydrate intake: 109g
+Total protein intake: 35g
+Total fat intake: 16g
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+All previous data has been deleted...
+DietBook is now empty.
+________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________
+Bye Jack! Hope to see you again soon!
+________________________________________________________________________________________________________________________________________________
