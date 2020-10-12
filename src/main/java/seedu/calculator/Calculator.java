@@ -2,9 +2,6 @@ package seedu.calculator;
 
 import java.util.ArrayList;
 
-import seedu.duke.Ui;
-import seedu.duke.Food;
-
 /**
  * Represents a calculator of food items in foodList.
  */
@@ -12,7 +9,7 @@ public class Calculator {
     private int totalCalorie = 0;
     private int totalCarbohydrate = 0;
     private int totalProtein = 0;
-    private int totalFat = 0;
+    private int totalFats = 0;
 
     /**
      * Construct a calculator taking in a foodList. Add up calories,
@@ -20,16 +17,13 @@ public class Calculator {
      *
      * @param foodList foodList containing food items to calculate.
      */
-    public Calculator(ArrayList<Food> foodList){
-        try {
-            for(int i=0; i< foodList.size(); i++){
-                totalCalorie += foodList.get(i).getCalorie();
-                totalCarbohydrate += foodList.get(i).getCarbohydrate();
-                totalProtein += foodList.get(i).getProtein();
-                totalFat += foodList.get(i).getFats();
-            }
-        } catch (NullPointerException e) {
-            Ui.printErrorMessage("the foodList is null");
+    public Calculator(ArrayList<Food> foodList) {
+        assert foodList != null : "the foodList should not be null.";
+        for (int i = 0; i < foodList.size(); i++) {
+            totalCalorie += foodList.get(i).getCalorie();
+            totalCarbohydrate += foodList.get(i).getCarbohydrate();
+            totalProtein += foodList.get(i).getProtein();
+            totalFats += foodList.get(i).getFats();
         }
     }
 
@@ -38,7 +32,7 @@ public class Calculator {
      *
      * @return the value of total calorie of food items in foodList.
      */
-    public int calculateCalorie(){
+    public int calculateCalorie() {
         return totalCalorie;
     }
 
@@ -47,7 +41,7 @@ public class Calculator {
      *
      * @return the value of total carbs of food items in foodList.
      */
-    public int calculateCarb(){
+    public int calculateCarb() {
         return totalCarbohydrate;
     }
 
@@ -56,7 +50,7 @@ public class Calculator {
      *
      * @return the value of total protein of food items in foodList.
      */
-    public int calculateProtein(){
+    public int calculateProtein() {
         return totalProtein;
     }
 
@@ -65,7 +59,7 @@ public class Calculator {
      *
      * @return the value of total fats of food items in foodList.
      */
-    public int calculateFat(){
-        return totalFat;
+    public int calculateFat() {
+        return totalFats;
     }
 }

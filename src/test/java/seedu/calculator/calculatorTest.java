@@ -36,6 +36,7 @@ class CalculatorTest {
         foodList.add(new Food("chicken rice", 666, 55, 30, 0));
         foodList.add(new Food("pancake", 150, 16, 0, 0));
         foodList.add(new Food("bao", 290, 0, 16, 0));
+
         Calculator calculator = new Calculator(foodList);
         assertEquals(30 + 16, calculator.calculateProtein());
     }
