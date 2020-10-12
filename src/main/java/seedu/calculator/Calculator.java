@@ -9,7 +9,7 @@ public class Calculator {
     private int totalCalorie = 0;
     private int totalCarbohydrate = 0;
     private int totalProtein = 0;
-    private int totalFats = 0;
+    private int totalFat = 0;
 
     /**
      * Construct a calculator taking in a foodList. Add up calories,
@@ -23,7 +23,7 @@ public class Calculator {
             totalCalorie += foodList.get(i).getCalorie();
             totalCarbohydrate += foodList.get(i).getCarbohydrate();
             totalProtein += foodList.get(i).getProtein();
-            totalFats += foodList.get(i).getFats();
+            totalFat += foodList.get(i).getFats();
         }
     }
 
@@ -60,6 +60,6 @@ public class Calculator {
      * @return the value of total fats of food items in foodList.
      */
     public int calculateFat() {
-        return totalFats;
+        return totalFat;
     }
 }
