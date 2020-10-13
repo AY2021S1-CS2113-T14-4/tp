@@ -32,7 +32,20 @@ public class Person {
      */
     public Person(String name, Gender gender, int age, int height, int originalWeight, int targetWeight,
                   ActivityLevel activityLevel) {
-        this.name = name;
+        assert name != null : "Name of person should not be null";
+        assert name.trim().length() > 0 : "Name of person should not be an empty string";
+        assert gender != null : "Gender of person should not be null";
+        assert age > 0 : "Age of person should be greater than 0";
+        assert age < 125 : "Age of person should be less than 125";
+        assert height > 0 : "Height of person should be greater than 0";
+        assert height < 273 : "Height of person should be less than 273";
+        assert originalWeight > 0 : "Original weight of person should be greater than 0";
+        assert originalWeight < 443 : "Original weight of person should be less than 443";
+        assert targetWeight > 0 : "Target weight of person should be greater than 0";
+        assert targetWeight < 443 : "Target weight of person should be less than 443";
+        assert activityLevel != null : "Activity level of person should not be null";
+
+        this.name = name.trim();
         this.gender = gender;
         this.age = age;
         this.height = height;
@@ -56,7 +69,9 @@ public class Person {
      * @param newName The new/revised name of the person.
      */
     public void setName(String newName) {
-        name = newName;
+        assert newName != null : "The revised name of person should not be null";
+        assert newName.trim().length() > 0 : "The revised name of person should not be an empty string";
+        name = newName.trim();
     }
 
     /**
@@ -74,6 +89,7 @@ public class Person {
      * @param newGender The new/revised gender of the person.
      */
     public void setGender(Gender newGender) {
+        assert newGender != null : "The revised gender of person should not be null";
         gender = newGender;
     }
 
@@ -92,6 +108,8 @@ public class Person {
      * @param newAge The new/revised age of the person.
      */
     public void setAge(int newAge) {
+        assert newAge > 0 : "The revised age of person should be greater than 0";
+        assert newAge < 125 : "The revised age of person should be lesser than 125";
         age = newAge;
     }
 
@@ -110,6 +128,8 @@ public class Person {
      * @param newHeight The new/revised height of the person.
      */
     public void setHeight(int newHeight) {
+        assert newHeight > 0 : "The revised height of person should be greater than 0";
+        assert newHeight < 273 : "The revised height of person should be lesser than 273";
         height = newHeight;
     }
 
@@ -128,6 +148,8 @@ public class Person {
      * @param newOriginalWeight The new/revised original weight of the person.
      */
     public void setOriginalWeight(int newOriginalWeight) {
+        assert newOriginalWeight > 0 : "The revised original weight of person should be greater than 0";
+        assert newOriginalWeight < 443 : "The revised original weight of person should be lesser than 443";
         originalWeight = newOriginalWeight;
     }
 
@@ -146,6 +168,8 @@ public class Person {
      * @param newTargetWeight The new/revised target weight of the person.
      */
     public void setTargetWeight(int newTargetWeight) {
+        assert newTargetWeight > 0 : "The revised target weight of person should be greater than 0";
+        assert newTargetWeight < 443 : "The revised target weight of person should be lesser than 443";
         targetWeight = newTargetWeight;
     }
 
@@ -164,6 +188,7 @@ public class Person {
      * @param newActivityLevel The new/revised activity level of the person.
      */
     public void setActivityLevel(ActivityLevel newActivityLevel) {
+        assert newActivityLevel != null : "The revised activity level of person should not be null";
         activityLevel = newActivityLevel;
     }
 

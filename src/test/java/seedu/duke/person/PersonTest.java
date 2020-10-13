@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
 
 class PersonTest {
 
@@ -36,12 +35,6 @@ class PersonTest {
     void gender_personWithNewGender_returnsNewGender() {
         person.setGender(Gender.FEMALE);
         assertEquals(Gender.FEMALE, person.getGender());
-    }
-
-    @Test
-    void gender_personWithNullGender_returnsNullGender() {
-        person.setGender(null);
-        assertNull(person.getGender());
     }
 
     @Test
@@ -97,12 +90,6 @@ class PersonTest {
     void setActivityLevel_personWithNewActivityLevel_returnsNewActivityLevel() {
         person.setActivityLevel(ActivityLevel.HIGH);
         assertEquals(ActivityLevel.HIGH, person.getActivityLevel());
-    }
-
-    @Test
-    void setActivityLevel_personWithNullActivityLevel_returnsNullActivityLevel() {
-        person.setActivityLevel(null);
-        assertNull(person.getActivityLevel());
     }
 
     @Test
