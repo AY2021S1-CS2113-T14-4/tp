@@ -1,5 +1,6 @@
 package seedu.duke.food;
 
+
 /**
  * Constructor of the Food class
  * Store information regarding a food item: name, number of calories in kcal, amount of carbohydrate in grams,

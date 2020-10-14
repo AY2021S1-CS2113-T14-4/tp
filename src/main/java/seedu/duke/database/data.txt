@@ -1,0 +1,48 @@
+#####################################################################
+#    3 LEVEL DATA BASE                                              #
+#    Canteen -----> Store ------> Food                              #
+#    Commands :                                                     #
+#    &%START : start reading data from the data base                #
+#    &%STOP : stop reading data from the data base                  #
+#    &%UP    : goes down 1 level e.g. Canteen ---> Store            #
+#    &%DOWN    : goes down 1 level e.g. Canteen ---> Store          #
+#    &%ADD format : adds the item with the given format             #
+#                                                                   #
+#    Comments : any line that starts with # is ignored              #
+#                                                                   #
+#    Canteen format : {name}                                        #
+#    Store format : {name}                                          #
+#    Food format : {name}|{Calorie}|{Carb}|{Protein}|{Fat}          #
+#####################################################################
+
+######################################################################
+#   Version 0.1 :                                                    #
+#   there is only UP, once a store or canteen is                     #
+#  specified we automatically go down 1 level , for this version     #
+#   there is no going out of a store and then coming back to add more#
+#   Units : Calorie : kcal  : Carbs : g Protein : g : Fats : g       #
+######################################################################
+
+&%START
+Science canteen
+Halal Mini Wok
+Prawn Mee Soup(Dry)(Large)|490|0|0|0
+Prawn Mee Soup(Dry)(Small)|390|0|0|0
+Fried Hokkien Prawn Mee(Large)|470|0|0|0
+Fried Hokkien Prawn Mee(Small)|350|0|0|0
+Clay Pot Chicken|440|0|0|0
+Black Pepper Chicken|490|0|0|0
+&%UP
+Ayam Penyet
+Ayam Penyet Set|699|0|0|0
+Steamed Chicken Set |475|0|0|0
+Ikan Grouper Penyet Set|669|0|0|0
+&%UP
+Michelin Star Restaurant
+Bouillabaisse with cock crab and poached lobster|520|45|35|56
+Chicken wings with Reblochon pomme purée|450|25|32|66
+Sea bass with prawn tortellini, fennel purée and white wine sauce|530|76|25|43
+&%UP
+&%UP
+&%STOP
+
